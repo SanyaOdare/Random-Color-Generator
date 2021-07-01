@@ -10,5 +10,8 @@ function colorValue() {
 }
 
 function colorChange(event){
-
+let randomColor = 'rgb(' + colorValue() + ',' + colorValue() + ',' + colorValue() + ')';
+event.target.style.backgroundColor = randomColor;
 }
+button.addEventListener('click', colorChange);
+mysteryButton.addEventListener('wheel', colorChange);
